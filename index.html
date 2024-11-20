@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <title>Lista de tarefas</title>
+
+</head>
+
+<body>
+
+  <main class="geral">
+
+    <h1 class="titulo">Lista de Tarefas</h1>
+
+    <div class="form">
+
+     
+        <form class="tarefa-form">
+
+          <input type="text" placeholder="Adicionar tarefa" class="incluir-tarefa">
+          <input type="number" step="0.01" class="incluir-custo" id="custo" required>
+          <input type="date" class="incluir-data" id="data_limite" required>
+          <button type="submit" class="add-tarefa">+</button>
+
+        
+      <table class="tabela">
+        <thead>
+          <tr>
+            <th>Tarefa</th>
+            <th>Custo</th>
+            <th>Data limite</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr data-id="1">
+            <td>título da tarefa</td>
+            <td>50.00</td>
+            <td>14/11/2024</td>
+            <td></td>
+            <td>
+              <button class="btn-action">
+                <span class="material-symbols-outlined">edit</span>
+              </button>
+
+              <button class="btn-action-delete">
+                <span class="material-symbols-outlined">delete</span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+
+
+      </form>
+       
+    </div>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
